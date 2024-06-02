@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>UI/UX</title>
+  </head>
+  <body>
+    <article class="container">
+      <div>
+        <nav class="navbar">
+          <ol class="navbar__list">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#buttons">Кнопки</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#tooltip">Подсказки</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#dropdown">Выпадающее меню</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#checkbox">checkbox, switch</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#input">Поля ввода</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#menubar">Меню сайта</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#modal">Модальное окно</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#cards">Карточки</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <main class="main">
+        <section id="buttons" class="section">
+          <h2 class="title">1. Кнопки</h2>
+          <div class="buttons">
+            <button class="btn">Button</button>
+            <button class="btn btn_rounded">Button</button>
+          </div>
+        </section>
+
+        <section id="tooltip" class="section">
+          <h2 class="title">2. Подсказки</h2>
+          <span class="link" data-tooltip="Небольшая подсказка"
+            >Подсказка стандарт</span
+          >
+        </section>
+
+        <section id="dropdown" class="section">
+          <h2 class="title">3. Выпадающее меню</h2>
+          <div class="dropdown">
+            <a href="#" class="link">Выпадющее меню</a>
+            <div class="dropdown__drop dropdown__drop">
+              <a href="#" class="dropdown__drop-item link">Элемент меню</a>
+              <a href="#" class="dropdown__drop-item link">Второй элемент</a>
+              <a href="#" class="dropdown__drop-item link">Третий элемент</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="checkbox" class="section">
+          <h2 class="title">4. checkbox, switch</h2>
+          <div>
+            <div>
+              <div class="switch">
+                <input type="checkbox" name="switch1" id="switch1" />
+                <label class="switch__label" for="switch1"
+                  >Текст какого-то свича</label
+                >
+              </div>
+            </div>
+            <div>
+              <div class="switch">
+                <input
+                  type="checkbox"
+                  disabled
+                  checked
+                  name="switch2"
+                  id="switch2"
+                />
+                <label class="switch__label" for="switch2"
+                  >Текст какого-то свича</label
+                >
+              </div>
+            </div>
+
+            <div class="checkbox">
+              <input type="checkbox" name="check1" id="check1" />
+              <label class="checkbox__label" for="check1"
+                >Текст какого-то чекбокса</label
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="input" class="section">
+          <h2 class="title">5. Поля ввода</h2>
+          <div style="width: 440px">
+            <div class="field">
+              <input
+                class="field__control"
+                type="text"
+                placeholder="Введите Ваше имя"
+              />
+            </div>
+          </div>
+
+          <div style="width: 440px">
+            <div class="field">
+              <input
+                class="field__control"
+                type="text"
+                placeholder="Поиск..."
+              />
+              <span class="field__icon">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21 21L16.514 16.506L21 21ZM19 10.5C19 12.7543 18.1045 14.9163 16.5104 16.5104C14.9163 18.1045 12.7543 19 10.5 19C8.24566 19 6.08365 18.1045 4.48959 16.5104C2.89553 14.9163 2 12.7543 2 10.5C2 8.24566 2.89553 6.08365 4.48959 4.48959C6.08365 2.89553 8.24566 2 10.5 2C12.7543 2 14.9163 2.89553 16.5104 4.48959C18.1045 6.08365 19 8.24566 19 10.5V10.5Z"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </section>
+
+        <section id="menubar" class="section">
+          <h2 class="title">6. Меню сайта</h2>
+
+          <nav class="menubar">
+            <a href="#" class="menubar__brand">Logo</a>
+            <ul class="menubar__nav">
+              <li><a href="#" class="menubar__nav-link">О компании</a></li>
+              <li><a href="#" class="menubar__nav-link">Услуги</a></li>
+              <li><a href="#" class="menubar__nav-link">Кейсы</a></li>
+              <li><a href="#" class="menubar__nav-link">Отзывы</a></li>
+              <li><a href="#" class="menubar__nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <nav class="menubar menubar_light">
+            <a href="#" class="menubar__brand">Logo</a>
+            <ul class="menubar__nav">
+              <li><a href="#" class="menubar__nav-link">О компании</a></li>
+              <li><a href="#" class="menubar__nav-link">Услуги</a></li>
+              <li><a href="#" class="menubar__nav-link">Кейсы</a></li>
+              <li><a href="#" class="menubar__nav-link">Отзывы</a></li>
+              <li><a href="#" class="menubar__nav-link">Контакты</a></li>
+            </ul>
+          </nav>
+        </section>
+
+        <section id="modal" class="section">
+          <h2 class="title">7. Модальное окно</h2>
+          <div>
+            <button class="btn" data-modal-trigger="true">Show modal</button>
+          </div>
+          <div class="modal">
+            <div class="modal__window">
+              <h2 class="modal__window-title">Заголовок окна</h2>
+              <button class="modal__window-close" data-modal-close="true">
+                <svg
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.40994 6L11.7099 1.71C11.8982 1.5217 12.004 1.2663 12.004 1C12.004 0.733698 11.8982 0.478304 11.7099 0.29C11.5216 0.101696 11.2662 -0.00409174 10.9999 -0.00409174C10.7336 -0.00409174 10.4782 0.101696 10.2899 0.29L5.99994 4.59L1.70994 0.29C1.52164 0.101696 1.26624 -0.00409174 0.999939 -0.00409174C0.733637 -0.00409174 0.478243 0.101696 0.289939 0.29C0.101635 0.478304 -0.00415277 0.733698 -0.00415277 1C-0.00415278 1.2663 0.101635 1.5217 0.289939 1.71L4.58994 6L0.289939 10.29C0.196211 10.383 0.121816 10.4936 0.0710478 10.6154C0.0202791 10.7373 -0.00585938 10.868 -0.00585938 11C-0.00585938 11.132 0.0202791 11.2627 0.0710478 11.3846C0.121816 11.5064 0.196211 11.617 0.289939 11.71C0.382902 11.8037 0.493503 11.8781 0.615362 11.9289C0.737221 11.9797 0.867927 12.0058 0.999939 12.0058C1.13195 12.0058 1.26266 11.9797 1.38452 11.9289C1.50638 11.8781 1.61698 11.8037 1.70994 11.71L5.99994 7.41L10.2899 11.71C10.3829 11.8037 10.4935 11.8781 10.6154 11.9289C10.7372 11.9797 10.8679 12.0058 10.9999 12.0058C11.132 12.0058 11.2627 11.9797 11.3845 11.9289C11.5064 11.8781 11.617 11.8037 11.7099 11.71C11.8037 11.617 11.8781 11.5064 11.9288 11.3846C11.9796 11.2627 12.0057 11.132 12.0057 11C12.0057 10.868 11.9796 10.7373 11.9288 10.6154C11.8781 10.4936 11.8037 10.383 11.7099 10.29L7.40994 6Z"
+                    fill="#9CA0D2"
+                  />
+                </svg>
+              </button>
+              <div class="modal__body">
+                <span class="modal__body-label">Любой контент</span>
+              </div>
+            </div>
+            <div class="modal__overlay" data-modal-close="true"></div>
+          </div>
+        </section>
+
+        <section id="cards" class="section">
+          <h2 class="title">8. Карточки</h2>
+
+          <div style="display: flex; gap: 30px">
+              <a href="#" class="link-unstyled">
+                <article class="card">
+                  <img src="./img/post.jpg" alt="" class="card__image">
+                  <div class="card__body">
+                    <h3 class="card__title">SumaiL присоединился к Nigma Galaxy</h3>
+                    <ul class="card__params">
+                      <li class="card__params-item">
+                        
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.64063 6.5C4.64063 6.8481 4.77891 7.18194 5.02505 7.42808C5.2712 7.67422 5.60503 7.8125 5.95313 7.8125C6.30123 7.8125 6.63507 7.67422 6.88121 7.42808C7.12735 7.18194 7.26563 6.8481 7.26563 6.5C7.26563 6.1519 7.12735 5.81806 6.88121 5.57192C6.63507 5.32578 6.30123 5.1875 5.95313 5.1875C5.60503 5.1875 5.2712 5.32578 5.02505 5.57192C4.77891 5.81806 4.64063 6.1519 4.64063 6.5ZM11.0414 6.19766C9.93048 3.85742 8.25118 2.67969 6.00001 2.67969C3.74766 2.67969 2.06954 3.85742 0.9586 6.19883C0.91404 6.29318 0.89093 6.39624 0.89093 6.50059C0.89093 6.60493 0.91404 6.70799 0.9586 6.80234C2.06954 9.14258 3.74883 10.3203 6.00001 10.3203C8.25235 10.3203 9.93048 9.14258 11.0414 6.80117C11.1316 6.61133 11.1316 6.39102 11.0414 6.19766ZM5.95313 8.5625C4.81407 8.5625 3.89063 7.63906 3.89063 6.5C3.89063 5.36094 4.81407 4.4375 5.95313 4.4375C7.09219 4.4375 8.01563 5.36094 8.01563 6.5C8.01563 7.63906 7.09219 8.5625 5.95313 8.5625Z" fill="#9CA0D2"/>
+                        </svg>
+                        <span>3,4k</span>
+                        /li>
+                      <li class="card__params-item">                    
+                        <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.5 2.5C3.10218 2.5 2.72064 2.65804 2.43934 2.93934C2.15804 3.22064 2 3.60218 2 4V8C2 8.39782 2.15804 8.77936 2.43934 9.06066C2.72064 9.34196 3.10218 9.5 3.5 9.5H4V10.5C3.99998 10.5885 4.02343 10.6754 4.06797 10.7518C4.1125 10.8282 4.17651 10.8915 4.25348 10.9351C4.33044 10.9787 4.4176 11.0011 4.50606 11.0001C4.59452 10.999 4.68111 10.9745 4.757 10.929L7.138 9.5H8.5C8.89782 9.5 9.27936 9.34196 9.56066 9.06066C9.84196 8.77936 10 8.39782 10 8V4C10 3.60218 9.84196 3.22064 9.56066 2.93934C9.27936 2.65804 8.89782 2.5 8.5 2.5H3.5Z" fill="#9CA0D2"/>
+                        </svg>
+                        <span>152</span>
+                      </li>
+                      <li class="card__params-item">                    
+                          <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1.3125 10.8125C1.3125 11.0199 1.48008 11.1875 1.6875 11.1875H10.3125C10.5199 11.1875 10.6875 11.0199 10.6875 10.8125V5.89062H1.3125V10.8125ZM10.3125 2.65625H8.34375V1.90625C8.34375 1.85469 8.30156 1.8125 8.25 1.8125H7.59375C7.54219 1.8125 7.5 1.85469 7.5 1.90625V2.65625H4.5V1.90625C4.5 1.85469 4.45781 1.8125 4.40625 1.8125H3.75C3.69844 1.8125 3.65625 1.85469 3.65625 1.90625V2.65625H1.6875C1.48008 2.65625 1.3125 2.82383 1.3125 3.03125V5.09375H10.6875V3.03125C10.6875 2.82383 10.5199 2.65625 10.3125 2.65625Z" fill="#9CA0D2"/>
+                          </svg>                    
+                        <time>28 мая 2022, 15:05</time>
+                      </li>
+                    </ul>
+                    <p class="card__text">
+                      Пакистанский киб class="card__params-item"ерспортсмен Саид 'SumaiL' Самаил Хассан присоединился к составу Nigma Galaxy по Dota 2.
+                    </p>
+                    <span class="btn">Читать<span/>
+                  </div>
+                </article>
+              </a>
+              <a href="#">
+                <article class="card-v2" style="background-image: url(./img/post.jpg);">
+                    <div class="card-v2__body">
+                        <h3 class="card-v2__title">SumaiL присоединился к Nigma Galaxy</h3>
+                        <ul class="card-v2__params">
+                          <li class="card__params-item">                  
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.64063 6.5C4.64063 6.8481 4.77891 7.18194 5.02505 7.42808C5.2712 7.67422 5.60503 7.8125 5.95313 7.8125C6.30123 7.8125 6.63507 7.67422 6.88121 7.42808C7.12735 7.18194 7.26563 6.8481 7.26563 6.5C7.26563 6.1519 7.12735 5.81806 6.88121 5.57192C6.63507 5.32578 6.30123 5.1875 5.95313 5.1875C5.60503 5.1875 5.2712 5.32578 5.02505 5.57192C4.77891 5.81806 4.64063 6.1519 4.64063 6.5ZM11.0414 6.19766C9.93048 3.85742 8.25118 2.67969 6.00001 2.67969C3.74766 2.67969 2.06954 3.85742 0.9586 6.19883C0.91404 6.29318 0.89093 6.39624 0.89093 6.50059C0.89093 6.60493 0.91404 6.70799 0.9586 6.80234C2.06954 9.14258 3.74883 10.3203 6.00001 10.3203C8.25235 10.3203 9.93048 9.14258 11.0414 6.80117C11.1316 6.61133 11.1316 6.39102 11.0414 6.19766ZM5.95313 8.5625C4.81407 8.5625 3.89063 7.63906 3.89063 6.5C3.89063 5.36094 4.81407 4.4375 5.95313 4.4375C7.09219 4.4375 8.01563 5.36094 8.01563 6.5C8.01563 7.63906 7.09219 8.5625 5.95313 8.5625Z" fill="#9CA0D2"/>
+                            </svg>
+                            <span>3,4k</span>
+                          </li>
+                          <li class="card__params-item">                    
+                            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.5 2.5C3.10218 2.5 2.72064 2.65804 2.43934 2.93934C2.15804 3.22064 2 3.60218 2 4V8C2 8.39782 2.15804 8.77936 2.43934 9.06066C2.72064 9.34196 3.10218 9.5 3.5 9.5H4V10.5C3.99998 10.5885 4.02343 10.6754 4.06797 10.7518C4.1125 10.8282 4.17651 10.8915 4.25348 10.9351C4.33044 10.9787 4.4176 11.0011 4.50606 11.0001C4.59452 10.999 4.68111 10.9745 4.757 10.929L7.138 9.5H8.5C8.89782 9.5 9.27936 9.34196 9.56066 9.06066C9.84196 8.77936 10 8.39782 10 8V4C10 3.60218 9.84196 3.22064 9.56066 2.93934C9.27936 2.65804 8.89782 2.5 8.5 2.5H3.5Z" fill="#9CA0D2"/>
+                            </svg>
+                            <span>152</span>
+                          </li>
+                          <li class="card__params-item">                    
+                              <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.3125 10.8125C1.3125 11.0199 1.48008 11.1875 1.6875 11.1875H10.3125C10.5199 11.1875 10.6875 11.0199 10.6875 10.8125V5.89062H1.3125V10.8125ZM10.3125 2.65625H8.34375V1.90625C8.34375 1.85469 8.30156 1.8125 8.25 1.8125H7.59375C7.54219 1.8125 7.5 1.85469 7.5 1.90625V2.65625H4.5V1.90625C4.5 1.85469 4.45781 1.8125 4.40625 1.8125H3.75C3.69844 1.8125 3.65625 1.85469 3.65625 1.90625V2.65625H1.6875C1.48008 2.65625 1.3125 2.82383 1.3125 3.03125V5.09375H10.6875V3.03125C10.6875 2.82383 10.5199 2.65625 10.3125 2.65625Z" fill="#9CA0D2"/>
+                              </svg>                    
+                            <time>28 мая 2022, 15:05</time>
+                          </li>
+                        </ul>
+                    </div>
+                </article>
+              </a>
+          </div>
+
+        </section>
+      </main>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

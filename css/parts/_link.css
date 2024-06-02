@@ -1,0 +1,14 @@
+.link {
+  font-weight: 700;
+  line-height: 27px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: .15s ease-in-out;
+  color: #fff;
+}
+@media(any-hover: hover) {
+  .link:hover {
+    color: #f73164;
+    text-decoration: none;
+  }
+}

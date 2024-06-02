@@ -1,0 +1,39 @@
+.field {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.field__control {
+  font-weight: 800;
+  line-height: 100%;
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #16182d;
+  border: none;
+  color: #fff;
+  border: 1px solid #23243e;
+  outline: none;
+  width: 100%;
+  transition: all 0.15s ease-in-out;
+}
+.field__control::placeholder {
+  color: #9ca0d2;
+}
+.field__control:focus {
+  border-color: #001aff;
+  background-color: #23243e;
+  box-shadow: 0 0 13px 0 rgba(0, 26, 255, 0.25);
+}
+.field__icon {
+  position: absolute;
+  right: 20px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+.field__icon svg {
+  stroke: #9ca0d2 !important;
+}
+
+.field__control:focus ~ span svg {
+  display: none;
+}

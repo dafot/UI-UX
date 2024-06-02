@@ -1,0 +1,42 @@
+.menubar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #23243e;
+  margin-bottom: 20px;
+  padding: 17px 30px;
+  color: #fff;
+  border-radius: 10px;
+}
+.menubar__nav {
+  display: flex;
+  gap: 15px;
+}
+.menubar__brand {
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 31px;
+  color: #fff;
+}
+.menubar a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+}
+@media(any-hover:hover) {
+  .menubar__nav-link:hover,
+  .menubar_light .menubar__nav-link:hover {
+    color: #F73164;
+  }
+
+}
+
+.menubar_light {
+  background: #fff;
+}
+.menubar_light .menubar__brand{
+  color: #090A1A;
+}
+.menubar_light .menubar__nav-link {
+  color: #090A1A;
+}

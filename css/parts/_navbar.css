@@ -1,0 +1,29 @@
+.navbar {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #16182d;
+  position: sticky;
+  top: 30px;
+}
+.navbar__item {
+  margin-bottom: 10px;
+}
+.navbar__item:last-child {
+  margin-bottom: 0;
+}
+
+.navbar__link {
+  display: inline-block;
+  padding-left: 10px;
+  color: #fff;
+  text-decoration: none;
+  line-height: 27px;
+  transition: color 200ms ease-in-out;
+}
+@media (any-hover: hover) {
+  .navbar__link:hover {
+    color: #f73164;
+  }
+}

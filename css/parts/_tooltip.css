@@ -1,0 +1,29 @@
+
+[data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+  background: #16182d;
+  border-radius: 10px;
+  color: #fff !important;
+  padding: 10px 20px;  
+  width: 217px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+  transition: .15s ease-in-out;
+}
+[data-tooltip]:hover::before {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
+  left: calc(100% + 17px);
+}

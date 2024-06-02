@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+  font-family: "Circe", sans-serif;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #090a1a;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+}
+img {
+  width: 100%;
+}
+
+button {
+  outline: none !important;
+  font-size: inherit;
+  font-family: inherit;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+}

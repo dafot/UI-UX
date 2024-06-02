@@ -1,0 +1,40 @@
+.card {
+  border-radius: 10px;
+  width: 300px;
+  overflow: hidden;
+  background-color: #16182d;
+}
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 122%;
+  color: #fff;
+  margin-bottom: 5px;
+}
+.card__params {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 158%;
+  color: #9ca0d2;
+}
+.card__params-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.card__body {
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.card__text {
+  font-size: 14px;
+  line-height: 136%;
+  color: #9ca0d2;
+  margin-bottom: 15px;
+}
